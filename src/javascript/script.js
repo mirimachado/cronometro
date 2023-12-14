@@ -1,9 +1,10 @@
-//variáveis para horas, minutos e segundos
+//variáveis 
 
 var minutos = 0
 var segundos = 0
-var intervalo
+var intervalo = 0
 var horas = 0
+var rodando = false;
 
 
 //para permanecer o padrão de 00 até chegar no 10.. ex: 01,02,03..etc
@@ -17,14 +18,18 @@ function mantemDoisNumeros(numero) {
 
 //setInterval chama outra função (incrementa 1, para contar até 1000 (milisegundos)
 function iniciaCronometro() {
-    incrementa()
-    intervalo = setInterval(incrementa, 1000)
+    if (rodando === false) {
+        incrementa();
+        intervalo = setInterval(incrementa, 1000);
+    }
 
+    rodando = true;
 }
 
 //para o cronômetro
 function pausaCronometro() {
-    clearInterval(intervalo)
+    clearInterval(intervalo);
+    rodando = false;
 }
 
 //limpa o cronômetro zerando a variável segundos e minutos
