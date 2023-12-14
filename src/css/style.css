@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(243, 211, 236)
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+#texto-principal {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+
+}
+
+#texto-tempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 700px;
+    margin-right: 700px;
+    height: 150px;
+    background-color: rgb(221, 195, 235);
+    border-radius: 70px;
+    transition: 1s;
+
+}
+
+#texto-tempo:hover {
+    background-color: rgb(183, 163, 218);
+}
+
+#inicia,
+#pausa,
+#limpa {
+    display: flex;
+    margin-top: 220px;
+    padding: 10px;
+    margin: 4px;
+    background-color: darksalmon;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+#inicia:hover,
+#pausa:hover,
+#limpa:hover {
+    background-color: rgb(228, 228, 162);
+
+}
